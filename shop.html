@@ -143,30 +143,7 @@
                 <strong>
                     ₹799
                 </strong>
-function addToCart(name, price) {
 
-    const product = {
-        name: name,
-        price: price,
-        size: "M",
-        quantity: 1
-    };
-
-    cart.push(product);
-
-    localStorage.setItem(
-        "ua_legacy_cart",
-        JSON.stringify(cart)
-    );
-
-    updateCartCount();
-
-    alert(
-        product.name +
-        " added to cart!\n\n" +
-        "Size: M\nQuantity: 1"
-    );
-}
                 <button
                     onclick="addToCart('LEGECY OVERSIZED BLACK',799)">
                     ADD TO CART
