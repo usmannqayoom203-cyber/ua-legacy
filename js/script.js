@@ -68,6 +68,45 @@ function changeQuantity(change) {
 // ADD TO CART
 // ==========================
 
+function addToCart(name, price) {
+
+    const product = {
+
+        name: name,
+
+        price: price,
+
+        size: "M",
+
+        quantity: 1
+
+    };
+
+
+    cart.push(product);
+
+
+    localStorage.setItem(
+        "ua_legacy_cart",
+        JSON.stringify(cart)
+    );
+
+
+    updateCartCount();
+
+
+    alert(
+        product.name +
+        " added to cart!\n\n" +
+        "Size: " +
+        product.size +
+        "\nQuantity: " +
+        product.quantity
+    );
+
+}
+
+
 function addProductToCart() {
 
     if (!selectedSize) {
@@ -114,7 +153,6 @@ function addProductToCart() {
     );
 
 }
-
 
 // ==========================
 // CART COUNT
