@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | UA LEGECY</title>
+
+    <meta name="description"
+          content="Complete your UA LEGECY order.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="logo">
+        UA LEGECY
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="shop.html">Shop</a>
+
+        <a href="cart.html">Cart</a>
+
+    </nav>
+
+</header>
+
+
+
+<main class="checkout-page">
+
+
+    <div class="checkout-container">
+
+
+        <div class="checkout-heading">
+
+            <p class="small-title">
+                UA LEGECY
+            </p>
+
+            <h1>
+                CHECKOUT.
+            </h1>
+
+        </div>
+
+
+
+        <div class="checkout-grid">
+
+
+            <!-- CUSTOMER INFORMATION -->
+
+            <section class="checkout-form">
+
+                <h2>
+                    DELIVERY INFORMATION
+                </h2>
+
+
+                <label>
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="customer-name"
+                    placeholder="Enter your full name"
+                >
+
+
+                <label>
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="customer-email"
+                    placeholder="Enter your email"
+                >
+
+
+                <label>
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="customer-phone"
+                    placeholder="Enter your phone number"
+                >
+
+
+                <label>
+                    Address
+                </label>
+
+                <textarea
+                    id="customer-address"
+                    placeholder="House / Street / Area"
+                ></textarea>
+
+
+                <div class="checkout-two-column">
+
+                    <div>
+
+                        <label>
+                            City
+                        </label>
+
+                        <input
+                            type="text"
+                            id="customer-city"
+                            placeholder="City"
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label>
+                            PIN Code
+                        </label>
+
+                        <input
+                            type="text"
+                            id="customer-pin"
+                            placeholder="PIN Code"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <h2 class="payment-heading">
+                    PAYMENT METHOD
+                </h2>
+
+
+                <div class="payment-option">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="cod"
+                        checked
+                    >
+
+                    <span>
+                        Cash on Delivery
+                    </span>
+
+                </div>
+
+
+                <div class="payment-option">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="online"
+                    >
+
+                    <span>
+                        Online Payment
+                    </span>
+
+                </div>
+
+
+                <button
+                    class="place-order-btn"
+                    onclick="placeOrder()">
+
+                    PLACE ORDER
+
+                </button>
+
+            </section>
+
+
+
+            <!-- ORDER SUMMARY -->
+
+            <section class="order-summary">
+
+                <h2>
+                    ORDER SUMMARY
+                </h2>
+
+
+                <div id="checkout-items"></div>
+
+
+                <div class="checkout-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong id="checkout-total">
+                        ₹0
+                    </strong>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </div>
+
+</main>
+
+
+
+<footer>
+
+    <div class="footer-logo">
+        UA LEGECY
+    </div>
+
+    <p>
+        LEGECY NEVER FADE.
+    </p>
+
+    <p class="copyright">
+        © 2026 UA LEGECY.
+    </p>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
