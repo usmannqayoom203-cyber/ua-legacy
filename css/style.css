@@ -1124,4 +1124,22 @@ footer > p {
     }
 
 }
+/* PRODUCT IMAGE FIX */
 
+.products .product-card .product-image {
+    width: 100% !important;
+    height: 380px !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.products .product-card .product-image img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+    display: block !important;
+}
