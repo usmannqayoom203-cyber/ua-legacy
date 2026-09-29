@@ -166,18 +166,21 @@ body {
 }
 
 .product-image {
-    height: 450px;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #f3f3f3;
 }
 
-.product-image span {
-    font-size: 45px;
-    font-weight: 900;
-    letter-spacing: -2px;
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
-
 .black {
     background: #151515;
     color: white;
